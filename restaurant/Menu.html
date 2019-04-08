@@ -5,80 +5,205 @@
 	Most recent revision:
 -->
 <html lang="en">
-		<head>
-			<title> Menu </title>
-		</head>
+	<head>
+				<meta charset="utf-8'>
+				<meta name= "viewport" 
+				content ="width=device-width, initial-scaled=1, shrink-to-fit=no"> 
+	
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<!-- Add icon library -->
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
-		<body>
-			<header>
-			<p>Menu</p>
-			<hr/>
-				<center> <h1> The Snack Shack </h1> </center>
-			</header>
+				<noscript>Use JavaScript Please.</noscript>
+		<title> Menu </title>
 			
-			<nav> 
-			<!-- The nav element will include navigation but tons or links -->
-				<hr />
-				<p><a href="HomePage.html">Home<a>
-				<a href="Menu.html">Menu<a>
-				<a href="ContactUs.html">Contact Us<a></p>
-				<hr />
+		
+		<!--Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/-->
+				
+				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+				integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+				crossorigin="anonymous">
+				
+				<link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+				
+				<link href="styles\restuarant.css" rel="stylesheet" type= "text/css" />
+		
+		<!--styles the nav, to obtain the blue border on the top of the page-->
+		
+			<style>
+		.btn {
+			background-color: DodgerBlue;
+			border: none;
+			color: white;
+			padding: 12px 16px;
+			font-size: 16px;
+			cursor: pointer;
+				}
+
+			/* Darker background on mouse-over */
+			.btn:hover {
+			background-color: RoyalBlue;	
 			
+				}
+				
+			header, h1	{padding-bottom: 0;
+							padding-top: 0;
+							margin:0px; }
+							
+	</style>
+	</head>
+		
+	<body>
+			<!-- carousel -->			
+
+			<div class="jumbotron">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+				<div class="carousel-item active">
+				<h5> We're opening a new location!</h5>
+				</div>
+				<div class="carousel-item">
+				<h5>We're rolling out our seasonal menu, with
+				special options for this season.</h5>
+				</div>
+				<div class="carousel-item">
+				<h5>The Drink of the Month is SG Special Brew</h5>
+				</div>
+				</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+			</a>
+			</div>
+			<header>	
+	
+	<!--inline element change to header and link icons-->
+
+		<h1> The Snack Shack</h1>
+		
+	<!-- The nav element will include navigation but tons or links -->
+</div>
+</header>
+
+		<nav>
+			<a class="btn badge-pill" href="HomePage.html"><i class="fa fa-home"></i></a>			
+			<a class="btn badge-pill" href="Menu.html"> Menu</a>
+			<a class="btn badge-pill" href="ContactUs.html"> Contact Us </a>
+				
+		</nav>
+		
+		
 			<!-- Menu Item Description and Prices-->
-		<table>
-			<p><h3> Burgers and Fries </h3></p>							
+	<div class='row'>
+		<div class='col-lg-4 col-md-6 col-xs-8'>
+			<h3> Burgers and Fries </h3>						
 			<p> An American Classic!</p>
 			<p> Your Choice- with or without cheese,</p>
 			<p> Pickle, onion, tomato, and lettuce</p>
 			<p> served with our famous think cut </p>
 			<p> french fries</p>
-			
-			
-			<p><h3>Hot Dogs and Chips </h3></p>
+			<h4>$5.00</h4>
+		</div>	
+		
+		<div class='col-lg-4 col-md-6 col-xs-8'>
+			<h3>Hot Dogs and Chips</h3>
 			<p> A Summer Classic!</p>
 			<p>Your choice-white or wheat bun</p>
 			<p>Relish, mustard, and ketchup</p>
 			<p>Served with our house-made chips</p> 
-			
-			
-			<p><h3>Italian Sausage and Peppers</h3></p>
+			<h4>$5.00</h4>
+		</div>	
+		
+		<div class='col-lg-4  col-md-6  col-xs-8'>	
+			<h3>Italian Sausage and Peppers</h3>
 			<p>An All-Time Favorite!</p>
 			<p>Your choice-mild or spicy Cole Slaw</p>
 			<p>Served with garlic mashers</p>
-			
-			
-			<p><h3>Tenderloin Sandwich and Chips</h3></p>
+			<h4>$6.95</h4>
+		</div>		
+		
+		
+
+		<div class='col-lg-4  col-md-6  col-xs-8'>
+			<h3>Tenderloin Sandwich and Chips</h3>
 			<p>Really Hits the Spot!</p>
 			<p>Plain or Sesame Seed Bun</p>
 			<p>Pickle, onion, tomato, and lettuce</p>
 			<p>Served with our house-made chips</p>
-			
-			
-			<p><h3>House Salad</h3></p>
+			<h4>$6.95</h4>
+		</div>
+		
+		<div class='col-lg-4 col-md-6 col-xs-8'>
+			<h3>House Salad</h3>
 			<p>On the Lighter Side</p>
 			<p>Your choice-with or without cheese</p>
 			<p>Iceberg lettuce, tomatoes, peppers</p>
 			<p>Thousand Island or Ranch</p>
 			<p>Dressing Served with a Dinner roll</p>
-			
-			
-			<p><h3>Brisket Sandwich and Fries</h3><p>
+			<h4>$7.95</h4>
+		</div>
+		
+		<div class='col-lg-4  col-md-6 col-xs-8'>
+			<h3>Brisket Sandwich and Fries</h3>
 			<p>A Taste of Texas!</p>
 			<p>Smoked Brisket on thick-out</p>
-			<p>Texas Toast</p>
-			<p>Cole Slaw</p>
+			<p>Texas Toast, Cole Slaw</p>
 			<p>Served with our famous thick-out</p>
 			<p>french fries</p>
-		</table>	
+		    <h4>$8.95</h4>
+		</div>
+	</div>	
+	
+	<center>
+		<table>
+			<tr><th colspan="2">Beverage</th></tr>
+				
+			<tr><td>Root Beer</td>
+				<td>$3.00</td>
+			</tr>
 			
-			</nav>
+			<tr><td>Bottled Water</td>
+				<td>$1.25</td>
+			</tr>	
 			
+			<tr><td>Lemonade</td>
+				<td>$1.00</td>
+			</tr>
+			
+			<tr><td>Iced Tea</td>
+				<td>$1.25</td>
+			</tr>
+		
+		</table>
+	</center>
+	<br>
+	<!--CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/-->
+		
+			
+					<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+	crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+	integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+	crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+	integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+	crossorigin="anonymous"></script>
 			
 			
 			<footer>
 			
-			<center><p>Honeysuckle Ln, Honolulu, Hawaii, Zipcode 96818</p>
-			<p>(888)584-9854</p></center>
+			<p>Honeysuckle Ln, Honolulu, Hawaii, Zipcode 96818</p>
+			<p>(888)584-9854</p>
 			
 			</footer>
 			

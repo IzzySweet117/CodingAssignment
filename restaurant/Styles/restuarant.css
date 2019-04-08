@@ -1,0 +1,78 @@
+
+
+
+
+	header, footer { background-color: #546a7b; 
+								color: #fef9ff;
+								height:	100%;
+								text-align: auto center;
+								padding: 6.5%;
+								font-family: 'Gochi Hand', cursive;
+								}
+		
+	h1 {margin: 1 auto;
+		font-size: 2.75em; 
+		color: #FDEBD0;
+		text-align: center;		}
+
+	body { background-color: #F6DDCC;
+		   font-family: 'Gochi Hand', cursive;	}
+
+	table, tr {	border-bottom: 2px solid black;
+				border-top: 2px solid black;	
+			    width: 50%;
+				font-size: 1.25em;
+				 }
+
+		nav { 
+			  padding-top: 10px;
+			  padding-bottom: 12px; 
+			   }
+		
+		nav .btn { background-color: #5b7d87;
+				         color: #fef9ff;
+						 size:auto;		}
+		nav .btn hover {font-weight: bold; }				 
+		
+		
+		p, h3 {text-align: center;
+				margin: 0;
+				font-size:1.25em;
+				padding-bottom: 5px}
+		
+		h3 {margin: 5px;
+			background-color: #b3ffb3;
+			font-style: bold;
+			font-size:2.25em;
+			}
+			
+		h4 {text-align: center;
+				margin: 0;
+				font-size:1.5em;
+				padding-bottom: 15px;
+				font-weight: bold; }
+		
+		
+		h5 {text-align:center; 
+			background-color: #546a7b;
+			padding: 100px;
+			font-weight: bold;
+			font-size: 2em;
+			color: #FDEBD0	}
+			
+		th {text-align: center;
+		background-color: #b3ffb3;
+				}
+				
+		.jumbotron { background-color: #546a7b;
+							padding-top: 0px;
+						font-family: 'Gochi Hand', cursive;}	
+								
+		label {text-align: right; }		
+		
+	
+		
+		tr:nth-child(even) {background: #546a7b;
+							color:#fef9ff; }
+		
+				

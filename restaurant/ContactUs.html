@@ -5,44 +5,122 @@
 	Most recent revision:
 -->
 <html lang="en">
-		<head>
-			<title> Contact Us </title>
-		</head>
 		
-		<body>
+	<head>
+				<meta charset="utf-8">
+				<meta name= "viewport" 
+				content ="width=device-width, initial-scaled=1, shrink-to-fit=no"> 
+		
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				
+				<noscript>Use JavaScript Please.</noscript>
+				<!-- Add icon library -->
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		
+		
+		<title> Contact Us </title>
+		
+		
+		<!--Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/-->
+				
+				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+				integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+				crossorigin="anonymous">
+				
+				<link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+				
+				<link href="styles/restuarant.css" rel="stylesheet" type= "text/css" />
+				
+				<script src='javascript/restuarant.js' type='text/javascript'> </script>
+		<!--styles the nav, to obtain the blue border on the top of the page-->
+	<style>
+		.btn {
+			background-color: DodgerBlue;
+			border: none;
+			color: white;
+			padding: 12px 16px;
+			font-size: 16px;
+			cursor: pointer;
+				}
+
+			/* Darker background on mouse-over */
+			.btn:hover {
+			background-color: RoyalBlue;
+				}
+	</style>
+	
+		
+	</head>
+		
+	<body>
 			<header>
-			<p>Contact Us</p>
-			<hr/>
+			
 				<center> <h1> The Snack Shack </h1> </center>
 			</header>
 			
-			<body>
-			<nav> <!-- The nav element will include navigation but tons or links -->
-				<hr />
-				<p><a href="HomePage.html">Home<a>
-				<a href="Menu.html">Menu<a>
-				<a href="ContactUs.html">Contact Us<a></p>
-				<hr />
 			
+			<!-- The nav element will include navigation but tons or links -->
+		<nav>	
+				<a class="btn badge-pill" href="HomePage.html"><i class="fa fa-home"></i></a>
+				<a class="btn badge-pill" href="Menu.html"> Menu</a>
+				<a class="btn badge-pill" href="ContactUs.html"> Contact Us </a>
+		</nav>	
+			
+				
+		
+		
+		
 			<!--Text Boxes for first name, last name, & phone number-->
 			
-				<form action="submit.html"method="POST">
-				<label for="Name">Name:
-				</label><br/>
-				<input type="text" id="Name"name="Name"><br/>
-			<br>
+		
+				<form onsubmit='return information();'>
+		<div class='row'>
+			<div class='col-lg-2 col-md-4 col-sm-6
+			text-lg-right text-md-right text-sm-right'>	
+				<label for="Name"> Name:
+				</label>
+			</div>	
+				<div class='col-lg-2 col-md-4 col-sm-6
+				text-lg-left text-md-left text-sm-left'>	
+				<input type="text" id="Name"name="Name">
+				</div>
+		</div>
+			
+		
+		<div class='row' >
+			<div class='col-lg-2 col-md-4 col-sm-6 
+			text-lg-right text-md-right text-sm-right'>
 				<label for="Email">Email:
-				</label><br/>
-				<input type="text" id="Email"name="Email"><br/>
-			<br>
+				</label>
+			</div>	
+			
+				<div class='col-lg-2 col-md-4 col-sm-6
+				text-lg-left text-md-left text-sm-left'>	
+				<input type="text" id="Email"name="Email">
+				</div>
+		</div>
+			
+		<div class='row'>
+			<div class='col-lg-2 col-md-4 col-sm-6
+			text-lg-right text-md-right text-sm-right'>
 				<label for="phoneNumber">Phone Number:
-				</label><br/>
-				<input type="text" id="phoneNumber"name="phoneNumber"><br/>
-			<br>
+				</label>
+			</div>
+				<div class='col-lg-2 col-md-4 col-sm-6
+				text-lg-left text-md-left text-sm-left'>
+				<input type="text" id="phoneNumber"name="phoneNumber">
+				</div>
+		</div>
 			
 			<!--Drop down Element, Select one Answer-->
-			
-			<label for="contact">Reason for Inquiry:</label><br/>
+	<div class='row'>
+		<div class='col-lg-2 col-md-4 col-sm-6
+		text-lg-right text-md-right text-sm-right'>
+			<label for="contact">Reason for Inquiry:</label>
+		</div>	
+<div class='col-lg-2 col-md-4 col-sm-6
+text-lg-left text-md-left text-sm-left'>	
 			<select id="contact" name="contact">
 			<option value="Catering" selected>Catering</option>
 			<option value="Private Party" selected>Private Party</option>
@@ -50,65 +128,103 @@
 			<option value="Other" selected>Other</option>
 			<option value="Default" selected>--Select One--</option>
 			</select>
+</div>
+	</div>
+			
 			
 			<!--text box for additional comments-->
-			<br>
-			<br>
-				<label for="info">Additional Information:</label><br/>
-				<textarea id="info" name="info">
+	<div class='row'>
+		<div class='col-lg-2 col-md-4 col-sm-6
+		text-lg-right text-md-right text-sm-right'>
+				<label for="info">Additional Information:</label>
+		</div>		
+			<div class='col-lg-2 col-md-4 col-sm-6
+			text-lg-left text-md-left text-sm-left'>
+				<textarea rows="5" cols="50" id="info" name="info">
 				</textarea>
-			</br>
+			</div>
+	</div>
 			
 			<!--field set, radio labels, Simple yes and No Question -->
-			<br>
+			
+	<div class='row'>
+		<div class='col-lg-2 col-md-4 col-sm-6
+		text-lg-right text-md-right text-sm-right'>
 				<fieldset>
-					<legend>Have you been to the restaurant?</legend>
-					
+					<label for="questionnaire">Have you been to the restaurant?</label>
+		</div>
+			<div class='col-lg-2 col-md-4 col-sm-6
+			text-lg-left text-md-left text-sm-left'>	
 					<input type="radio" id="choice1"
-					name="questionnaire" value="yes">
-					<label for="choice1">Yes</label><br/>
+					name="questionnaire" value="yes" checked>
+					<label for="choice1">Yes</label>
 					
 					<input type="radio" id="choice2"
 					name="questionnaire" value="no">
-					<label for="choice2">No</label><br/>
+					<label for="choice2">No</label>
 				</fieldset>
-				
+			</div>			
+	</div>		
 			<!--field set, multiple answer checkboxes -->
 			
+	<div class='row'>
+		<div class='col-lg-2 col-md-4 col-sm-6
+		text-lg-right text-md-right text-sm-right'>
 				<fieldset>
-					<legend>Best days to contact you: </legend>
+					<label for="day">Best days to contact you: </label>
+		</div>		
+
+			<div class='col-lg-2 col-md-4 col-sm-6
+			text-lg-left text-md-left text-sm-left'>
+					<input class='checkBox' type="checkbox" id ="Monday" name="day" value="Monday">
+					<label for="Monday">M</label>
+		
+					<input class='checkBox' type="checkbox" id ="Tuesday" name="day" value="Tuesday">
+					<label for="Tuesday">T</label>
 					
-					<input type="checkbox" id ="Monday" name="day" value="Monday">
-					<label for="Monday">M</label><br />
+					<input class='checkBox' type="checkbox" id ="Wednesday" name="day" value="Wednesday">
+					<label for="Wednesday"> W </label>
 					
-					<input type="checkbox" id ="Tuesday" name="day" value="Tuesday">
-					<label for="Tuesday">T</label><br />
+					<input class='checkBox' type="checkbox" id ="Thursday" name="day" value="Thursday">
+					<label for="Thursday">Th</label>
 					
-					<input type="checkbox" id ="Wednesday" name="day" value="Wednesday">
-					<label for="Wednesday"> W </label><br/>
-					
-					<input type="checkbox" id ="Thursday" name="day" value="Thursday">
-					<label for="Thursday">Th</label><br />
-					
-					<input type="checkbox" id ="Friday" name="day" value="Friday">
-					<label for="Friday">F</label><br />
+					<input class='checkBox' type="checkbox" id ="Friday" name="day" value="Friday">
+					<label for="Friday">F</label>
+			</div>	
+	</div>
+		
 				</fieldset>
+						
+			
 				
 			<!-- Send Request button-->	
-		</br>
-		
-			<input type="submit" name="submit" value="Send Request">
+	
+	<div class='row'>
+		<div class='col-lg-2  
+		text-lg-center text-md-center text-sm-center'>	
+	
+			<input type="submit" name="submit" value="Send Request">		
+		</div>
+	</div>		
+	</form>
+	
+	<p><span id = "thank"></span></p>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+						integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+						crossorigin="anonymous"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+						integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+						crossorigin="anonymous"></script>
+					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+						integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+						crossorigin="anonymous"></script>
+				
 			
-			</body>
-			</nav>
-			
-			<hr>
-			<footer>
-			
-			<center><p>Honeysuckle Ln, Honolulu, Hawaii, Zipcode 96818</p>
-			<p>(888)584-9854</p></center>
-			
-			</footer>
-			
-		</body>
-	</html>
+
+		<footer>
+			<p>Honeysuckle Ln, Honolulu, Hawaii, Zipcode 96818</p>
+			<p>(888)584-9854</p>
+		</footer>	
+	</body>
+</html>

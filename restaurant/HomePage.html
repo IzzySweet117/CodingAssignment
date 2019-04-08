@@ -6,55 +6,112 @@
 	Most recent revision:
 -->
 <html lang="en">
-		<head>
+	<head>
+				<meta charset="utf-8'>
+				<meta name= "viewport" 
+				content ="width=device-width, initial-scaled=1, shrink-to-fit=no"> 
+				
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<!-- Add icon library -->
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.btn {
+			background-color: DodgerBlue;
+			border: none;
+			color: white;
+			padding: 12px 16px;
+			font-size: 16px;
+			cursor: pointer;
+				}
+
+			/* Darker background on mouse-over */
+			.btn:hover {
+			background-color: RoyalBlue;
+				}
+	</style>
+</head>
+<body>
+
+	<noscript>Use JavaScript Please.</noscript>
+
+	
 			<title> Home Page </title>
+		
+		<!--Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/-->
+				
+				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+				integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+				crossorigin="anonymous">
+				<link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+				<link href="styles\restuarant.css" rel="stylesheet" type= "text/css" />
+		
+		<!--styles the nav, to obtain the blue border on the top of the page-->
+	
+		
 		</head>
 		
-		<body>
-			<header>
-			<p>Home Page</p>
-			<hr/>
-				<center><h1> The Snack Shack </h1></center>
-			</header>
+		
+<body>
+		<header>
 			
-			<nav> 
+			<h1> The Snack Shack </h1>
+		</header>
+			
+	<nav> 
 			<!-- The nav element will include navigation but tons or links -->
-				<hr />
-				<p><a href="HomePage.html">Home<a>
-				<a href="Menu.html">Menu<a>
-				<a href="ContactUs.html">Contact Us<a></p>
-				<hr />
-			
+		
+				<a class="btn badge-pill" href="HomePage.html"><i class="fa fa-home"></i></a>
+				<a class="btn badge-pill" href="Menu.html"> Menu</a>
+				<a class="btn badge-pill" href="ContactUs.html"> Contact Us </a>
+					
+	</nav>		
+				
+				
+
+	
 			<!-- Image of The Snack Shack-->
 				<center>
-					<a href="...">
-					<img src="images/BeachDiningPic2.jpg" alt="Pic of Dining Experience at The Snack Shack" />
-					</a>
+			<div style="padding: 25px 0px 5px 0px">
+				<p style= "position: center"> <img src="images/BeachDiningPic2.jpg" alt="Pic of Dining Experience at The Snack Shack" height=280px />
+				</p>
 				</center>
-			
+			</div>
+
 			<!-- Description of The Snack Shack-->
 	
 				<center><p>
-				<div id="wrapper">
-				The Snack Shack is a comfy quaint outdoor villa size shack specializing in the best appeitzers our tropical
+			<div id="wrapper">
+		<div style="padding: 10px">
+		<div class='col-lg-4 col-md-8 col-sm-10
+		text-lg-right text-md-right text-sm-right'>
+				<p>The Snack Shack is a comfy quaint outdoor villa size shack specializing in the best appeitzers our tropical
 				motherland has to offer. Located right outside Honolulu on Kahala Beach we will be hard to miss. Experience 
 				little nostalgic delights of food and drinks native to Hawaiian culture as well as common American Snacks 
 				found on the Mainland. After a long day of surfing, shopping, and soaking in the beautiful tropical weather
 				another adventure will await you at The Snack Shack.	
-				Aloha!</div> </p>
+				<p>Aloha!</p>
+		</div> </p>
+			</div>	
+		</div>		
 				
-			<hr />
+					<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+						integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+						crossorigin="anonymous"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+						integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+						crossorigin="anonymous"></script>
+					<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+						integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+						crossorigin="anonymous"></script>
 				
-				
-			</nav>
+			
 			
 			
 			<footer>
 			
-			<center><p>Honeysuckle Ln, Honolulu, Hawaii, Zipcode 96818</p>
-			<p>(888)584-9854</p></center>
+			<p>Honeysuckle Ln, Honolulu, Hawaii, Zipcode 96818</p>
+			<p>(888)584-9854</p>
 			
 			</footer>
-			
 		</body>
 	</html>
